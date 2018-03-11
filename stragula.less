@@ -173,8 +173,6 @@ table a:not(.btn),
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	border-radius: 0px;
-	left: auto;
-	right: 0;
 	border-top: 5px solid @color2;
 	/* Links inside the dropdown */
 	a {
@@ -229,9 +227,16 @@ table a:not(.btn),
 
 @media only screen and (max-width: 480px) {
 	.dropdown-content {
-		left: -100% !important;
-		right: auto !important;
-		column-gap: 0px !important;
+		left: -100%;
+		right: auto;
+		column-gap: 0px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.dropdown-content {
+		left: auto;
+		right: 0;
 	}
 }
 
