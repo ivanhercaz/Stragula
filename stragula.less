@@ -720,11 +720,11 @@ table.smworgtable-v2-toc {
     column-rule: 1px solid lightblue;
 }
 
-@media query screen (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 	.user-manual {
-		-webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+		-webkit-column-count: 2 !important;
+		-moz-column-count: 2 !important;
+		column-count: 2 !important;
 	}
 }
 
